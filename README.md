@@ -40,6 +40,7 @@ project-folder/
 
 ## License
 This project is open-source and free to use. Modify it as needed!
+Note: If the link does not display the image correctly, please check the PDF output for more information.
 
 ## Contact
 For any issues, feel free to reach out.
