@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Bootstrap Website Template</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700,900"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="fonts/icomoon/style.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/magnific-popup.css" />
+    <link rel="stylesheet" href="css/jquery-ui.css" />
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css" />
+    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css" />
+    <link rel="stylesheet" href="css/aos.css" />
+    <link rel="stylesheet" href="css/fancybox.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script nonce="b9676c6d-01a2-4d28-9c09-e3b60a4dcbd2">
+      (function (w, d) {
+        !(function (a, b, c, d) {
+          a[c] = a[c] || {};
+          a[c].executed = [];
+          a.zaraz = { deferred: [], listeners: [] };
+          a.zaraz.q = [];
+          a.zaraz._f = function (e) {
+            return async function () {
+              var f = Array.prototype.slice.call(arguments);
+              a.zaraz.q.push({ m: e, a: f });
+            };
+          };
+          for (const g of ["track", "set", "debug"]) a.zaraz[g] = a.zaraz._f(g);
+          a.zaraz.init = () => {
+            var h = b.getElementsByTagName(d)[0],
+              i = b.createElement(d),
+              j = b.getElementsByTagName("title")[0];
+            j && (a[c].t = b.getElementsByTagName("title")[0].text);
+            a[c].x = Math.random();
+            a[c].w = a.screen.width;
+            a[c].h = a.screen.height;
+            a[c].j = a.innerHeight;
+            a[c].e = a.innerWidth;
+            a[c].l = a.location.href;
+            a[c].r = b.referrer;
+            a[c].k = a.screen.colorDepth;
+            a[c].n = b.characterSet;
+            a[c].o = new Date().getTimezoneOffset();
+            if (a.dataLayer)
+              for (const n of Object.entries(
+                Object.entries(dataLayer).reduce(
+                  (o, p) => ({ ...o[1], ...p[1] }),
+                  {}
+                )
+              ))
+                zaraz.set(n[0], n[1], { scope: "page" });
+            a[c].q = [];
+            for (; a.zaraz.q.length; ) {
+              const q = a.zaraz.q.shift();
+              a[c].q.push(q);
+            }
+            i.defer = !0;
+            for (const r of [localStorage, sessionStorage])
+              Object.keys(r || {})
+                .filter((t) => t.startsWith("_zaraz_"))
+                .forEach((s) => {
+                  try {
+                    a[c]["z_" + s.slice(7)] = JSON.parse(r.getItem(s));
+                  } catch {
+                    a[c]["z_" + s.slice(7)] = r.getItem(s);
+                  }
+                });
+            i.referrerPolicy = "origin";
+            i.src =
+              "/cdn-cgi/zaraz/s.js?z=" +
+              btoa(encodeURIComponent(JSON.stringify(a[c])));
+            h.parentNode.insertBefore(i, h);
+          };
+          ["complete", "interactive"].includes(b.readyState)
+            ? zaraz.init()
+            : a.addEventListener("DOMContentLoaded", zaraz.init);
+        })(w, d, "zarazData", "script");
+      })(window, document);
+    </script>
+  </head>
+  <body>
+    <div class="site-wrap">
+      <div class="site-mobile-menu">
+        <div class="site-mobile-menu-header">
+          <div class="site-mobile-menu-close mt-3">
+            <span class="icon-close2 js-menu-toggle"></span>
+          </div>
+        </div>
+        <div class="site-mobile-menu-body"></div>
+      </div>
+      <header class="header-bar d-flex d-lg-block align-items-center">
+        <div class="site-logo">
+          <a href="index.html">Shutter</a>
+        </div>
+        <div
+          class="d-inline-block d-xl-none ml-md-0 ml-auto py-3"
+          style="position: relative; top: 3px"
+        >
+          <a href="#" class="site-menu-toggle js-menu-toggle text-white"
+            ><span class="icon-menu h3"></span
+          ></a>
+        </div>
+        <div class="main-menu">
+          <ul class="js-clone-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="photos.html">Photos</a></li>
+            <li><a href="bio.html">Bio</a></li>
+            <li class="active"><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+          <ul class="social js-clone-nav">
+            <li>
+              <a href="#"><span class="icon-facebook"></span></a>
+            </li>
+            <li>
+              <a href="#"><span class="icon-twitter"></span></a>
+            </li>
+            <li>
+              <a href="#"><span class="icon-instagram"></span></a>
+            </li>
+          </ul>
+        </div>
+      </header>
+      <main class="main-content">
+        <div class="container-fluid photos">
+          <div class="row justify-content-center">
+            <div class="col-md-8 pt-4">
+              <div class="row mb-5" data-aos="fade-up">
+                <div class="col-12">
+                  <h2 class="text-white mb-4 text-center">My Blog</h2>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12" data-aos="fade-up">
+                  <div class="d-flex blog-entry align-items-start">
+                    <div class="mr-5 img-wrap">
+                      <a href="#"
+                        ><img
+                          src="images/Adithya_1.jpg.webp"
+                          alt="Image"
+                          class="img-fluid"
+                      /></a>
+                    </div>
+                    <div>
+                      <h2 class="mt-0 mb-2">
+                        <a href="#">Intro</a>
+                      </h2>
+                      <div class="meta mb-3">
+                        Posted by <a href="#">Lalith Aditya</a> on <a href="#">Sept. 25, 2024</a>
+                      </div>
+                      <p align="justify">
+                        Lalith Aditya is a skilled and passionate Front-End Developer currently pursuing a degree in Computer Science. With a strong foundation in HTML, CSS, and JavaScript, he excels at creating dynamic and responsive web applications that provide seamless user experiences. His attention to detail and commitment to best practices in coding ensure that his projects not only look visually appealing but also function flawlessly across various devices and platforms. Experience with popular frameworks like React enhances his ability to build interactive interfaces, while his understanding of user-centered design principles allows him to create applications that resonate with users.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-12" data-aos="fade-up">
+                  <div class="d-flex blog-entry align-items-start">
+                    <div class="mr-5 img-wrap">
+                      <a href="#"
+                        ><img
+                          src="images/Adithya_1.jpg.webp"
+                          alt="Image"
+                          class="img-fluid"
+                      /></a>
+                    </div>
+                    <div>
+                      <h2 class="mt-0 mb-2">
+                        <a href="#">About</a>
+                      </h2>
+                      <div class="meta mb-3">
+                        Posted by <a href="#">Lalith Aditya</a> on <a href="#">Sept. 25, 2024</a>
+                      </div>
+                      <p align="justify">
+                        Lalith Aditya is a dedicated and talented Front-End Developer currently pursuing a degree in Computer Science, where he has effectively combined his technical skills with a passion for creating intuitive user experiences. With a strong foundation in HTML, CSS, and JavaScript, he consistently delivers visually appealing and responsive web applications that engage users. Lalith's keen attention to detail and understanding of modern design principles enable him to craft seamless interfaces that work flawlessly across various devices and platforms. His ability to bridge the gap between technical implementation and user-centered design highlights his versatility and commitment to producing exceptional digital experiences that meet both user needs and business objectives.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-12" data-aos="fade-up">
+                  <div class="d-flex blog-entry align-items-start">
+                    <div class="mr-5 img-wrap">
+                      <a href="#"
+                        ><img
+                          src="images/Adithya_1.jpg.webp"
+                          alt="Image"
+                          class="img-fluid"
+                      /></a>
+                    </div>
+                    <div>
+                      <h2 class="mt-0 mb-2">
+                        <a href="#">Extras</a>
+                      </h2>
+                      <div class="meta mb-3">
+                        Posted by <a href="#">Lalith Aditya</a> on <a href="#">Sept. 25, 2024</a>
+                      </div>
+                      <p align="justify">
+                       Lalith Aditya is a dedicated and talented Front-End Developer currently pursuing a degree in Computer Science, where he has seamlessly blended his technical expertise with a passion for creating engaging user experiences. With a strong command of HTML, CSS, and JavaScript, he consistently delivers visually appealing and responsive web applications that captivate users. Lalith possesses a keen eye for detail and a solid understanding of modern design principles, enabling him to craft interfaces that are both functional and aesthetically pleasing. His ability to bridge the gap between technical implementation and user-centered design highlights his versatility and commitment to producing exceptional digital experiences that fulfill both user needs and business objectives.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-12" data-aos="fade-up">
+                  <div class="d-flex blog-entry align-items-start">
+                    <div class="mr-5 img-wrap">
+                      <a href="#"
+                        ><img
+                          src="images/Adithya_1.jpg.webp"
+                          alt="Image"
+                          class="img-fluid"
+                      /></a>
+                    </div>
+                    <div>
+                      <h2 class="mt-0 mb-2">
+                        <a href="#">Advanced Photography Tutorial For Pro</a>
+                      </h2>
+                      <div class="meta mb-3">
+                        Posted by <a href="#">Lalith Aditya</a> on <a href="#">Sept. 25, 2024</a>
+                      </div>
+                      <p align="justify">
+                        Lalith Aditya is a dedicated and talented Front-End Developer currently pursuing a degree in Computer Science, where he has seamlessly integrated his technical skills with a passion for creating impactful web applications. With a strong command of HTML, CSS, and JavaScript, Lalith consistently delivers visually engaging and responsive interfaces that enhance user experience. His keen eye for detail and understanding of user-centered design principles empower him to craft applications that are both functional and aesthetically pleasing. Lalith's ability to bridge the gap between technical implementation and creative design demonstrates his versatility and commitment to producing exceptional digital experiences that meet the needs of users and businesses alike.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 text-center">
+                  <div class="custom-pagination">
+                    <span>1</span>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <span>...</span>
+                    <a href="#">7</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-md-12 text-center py-5">
+              <p>
+                Copyright &copy;
+                <script>
+                  document.write(new Date().getFullYear());
+                </script>
+                All rights reserved | This template is made with
+                by<a href="#">
+                <b> Lalith Aditya</b></font></a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery-migrate-3.0.1.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/jquery.countdown.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/bootstrap-datepicker.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-23581568-13");
+    </script>
+    <script
+      defer
+      src="https://static.cloudflareinsights.com/beacon.min.js/v8b253dfea2ab4077af8c6f58422dfbfd1689876627854"
+      integrity="sha512-bjgnUKX4azu3dLTVtie9u6TKqgx29RBwfj3QXYt5EKfWM/9hPSAI/4qcV5NACjwAo8UtTeWefx6Zq5PHcMm7Tg=="
+      data-cf-beacon='{"rayId":"80c227117d9b2e96","token":"cd0b4b3a733644fc843ef0b185f98241","version":"2023.8.0","si":100}'
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

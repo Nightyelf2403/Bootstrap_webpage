@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Bootstrap Website Template</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700,900"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="fonts/icomoon/style.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/magnific-popup.css" />
+    <link rel="stylesheet" href="css/jquery-ui.css" />
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css" />
+    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css" />
+    <link rel="stylesheet" href="css/aos.css" />
+    <link rel="stylesheet" href="css/fancybox.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script nonce="4b6c5ae0-8163-407b-9724-3db815cc85a9">
+      (function (w, d) {
+        !(function (a, b, c, d) {
+          a[c] = a[c] || {};
+          a[c].executed = [];
+          a.zaraz = { deferred: [], listeners: [] };
+          a.zaraz.q = [];
+          a.zaraz._f = function (e) {
+            return async function () {
+              var f = Array.prototype.slice.call(arguments);
+              a.zaraz.q.push({ m: e, a: f });
+            };
+          };
+          for (const g of ["track", "set", "debug"]) a.zaraz[g] = a.zaraz._f(g);
+          a.zaraz.init = () => {
+            var h = b.getElementsByTagName(d)[0],
+              i = b.createElement(d),
+              j = b.getElementsByTagName("title")[0];
+            j && (a[c].t = b.getElementsByTagName("title")[0].text);
+            a[c].x = Math.random();
+            a[c].w = a.screen.width;
+            a[c].h = a.screen.height;
+            a[c].j = a.innerHeight;
+            a[c].e = a.innerWidth;
+            a[c].l = a.location.href;
+            a[c].r = b.referrer;
+            a[c].k = a.screen.colorDepth;
+            a[c].n = b.characterSet;
+            a[c].o = new Date().getTimezoneOffset();
+            if (a.dataLayer)
+              for (const n of Object.entries(
+                Object.entries(dataLayer).reduce(
+                  (o, p) => ({ ...o[1], ...p[1] }),
+                  {}
+                )
+              ))
+                zaraz.set(n[0], n[1], { scope: "page" });
+            a[c].q = [];
+            for (; a.zaraz.q.length; ) {
+              const q = a.zaraz.q.shift();
+              a[c].q.push(q);
+            }
+            i.defer = !0;
+            for (const r of [localStorage, sessionStorage])
+              Object.keys(r || {})
+                .filter((t) => t.startsWith("_zaraz_"))
+                .forEach((s) => {
+                  try {
+                    a[c]["z_" + s.slice(7)] = JSON.parse(r.getItem(s));
+                  } catch {
+                    a[c]["z_" + s.slice(7)] = r.getItem(s);
+                  }
+                });
+            i.referrerPolicy = "origin";
+            i.src =
+              "/cdn-cgi/zaraz/s.js?z=" +
+              btoa(encodeURIComponent(JSON.stringify(a[c])));
+            h.parentNode.insertBefore(i, h);
+          };
+          ["complete", "interactive"].includes(b.readyState)
+            ? zaraz.init()
+            : a.addEventListener("DOMContentLoaded", zaraz.init);
+        })(w, d, "zarazData", "script");
+      })(window, document);
+    </script>
+  </head>
+  <body>
+    <div class="site-wrap">
+      <div class="site-mobile-menu">
+        <div class="site-mobile-menu-header">
+          <div class="site-mobile-menu-close mt-3">
+            <span class="icon-close2 js-menu-toggle"></span>
+          </div>
+        </div>
+        <div class="site-mobile-menu-body"></div>
+      </div>
+      <header
+        class="header-bar d-flex d-lg-block align-items-center"
+        data-aos="fade-left"
+      >
+        <div class="site-logo">
+          <a href="index.html">Shutter</a>
+        </div>
+        <div
+          class="d-inline-block d-xl-none ml-md-0 ml-auto py-3"
+          style="position: relative; top: 3px"
+        >
+          <a href="#" class="site-menu-toggle js-menu-toggle text-white"
+            ><span class="icon-menu h3"></span
+          ></a>
+        </div>
+        <div class="main-menu">
+          <ul class="js-clone-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="photos.html">Photos</a></li>
+            <li class="active"><a href="bio.html">Bio</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+          <ul class="social js-clone-nav">
+            <li>
+              <a href="#"><span class="icon-facebook"></span></a>
+            </li>
+            <li>
+              <a href="#"><span class="icon-twitter"></span></a>
+            </li>
+            <li>
+              <a href="#"><span class="icon-instagram"></span></a>
+            </li>
+          </ul>
+        </div>
+      </header>
+      <main class="main-content">
+        <div class="container-fluid photos">
+          <div class="row justify-content-center">
+            <div class="col-md-6 pt-4">
+              <figure class="mb-5" data-aos="fade-up">
+                <img
+                  src="images/img_20.jpg.webp"
+                  alt="Image"
+                  class="img-fluid"
+                />
+              </figure>
+              <h2 class="text-white mb-4" data-aos="fade-up">
+                Hey There! I'm Lalith Aditya
+              </h2>
+              <div class="row" data-aos="fade-up">
+                <div class="col-md-12">
+                  <p><b>Name</b>: Lalith Aditya<br/>
+                    <b>Date of Birth: </b>24-04-2004<br/>
+                    <b>Contact Information: </b><br/>
+                    <b>Email: </b> chun8135@vandals.uidhaho.edu<br/>
+                    <b>Phone: </b> +1(208) 888-9999<br/>
+                    
+                    <b>Education: </b><br/>
+                    <b>Major: </b> Computer Science<br/>
+                    <b>University: </b> Idaho<br/>
+                    <b>Professional Experience: </b><br/>
+                    <b>Current Position: </b>Front-End Developer<br/>
+                    <b>Company: </b>ABC<br/>
+                    <b>Duration: </b> NA<br/>
+                    <b>Responsibilities: </b><br/>
+                    Create visually appealing and user-friendly web interfaces using HTML, CSS, and JavaScript.<br/>
+                    Ensure websites are responsive and work seamlessly across various devices and screen sizes.<br/>
+                    Test and debug web applications to ensure they function correctly on different browsers and platforms.<br/>
+                    Creating wireframes, prototypes, and mockups to visualize design ideas.<br/>
+                    Ensuring designs align with branding guidelines and accessibility standards.<br/>
+                    <b>Skills: </b>
+                    <ul><li>Responsive Design Frameworks<br/>
+                      <li>Version Control Systems<br/>
+                        <li>Performance Optimization<br/>
+                          <li>RESTful APIs
+                            <li>Accessibility Standards<br/>
+                      <li>User Research<br/>
+                        <li>Usability Testing<br/>
+                          <li>Problem Solving<br/>
+                            <li>Strong Communication Skills</li></ul><br/>
+                    
+                    <b>Interests: </b><br/>
+                    <ul>
+                    <li>Design Thinking
+                    <li>Front-end Development
+                    <li>Emerging Technologies
+                    <li>Problem-Solving
+                    <li>Art and Creativity</li></ul><br/>
+                    
+                    
+                    <b>Languages Known: </b><br/>
+                    English and Telugu<br/>
+                    </p>
+                    
+                    </p>
+                    
+                  <p cass="mt-4">
+                    Thanks! <br />
+                    Lalith Aditya,
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-md-12 text-center py-5">
+              <p>
+                Copyright &copy;
+                <script>
+                  document.write(new Date().getFullYear());
+                </script>
+                All rights reserved | This template is made with
+                by<a href="#">
+                <b> Lalith Aditya</b></a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery-migrate-3.0.1.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/jquery.countdown.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/bootstrap-datepicker.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-23581568-13");
+    </script>
+    <script
+      defer
+      src="https://static.cloudflareinsights.com/beacon.min.js/v8b253dfea2ab4077af8c6f58422dfbfd1689876627854"
+      integrity="sha512-bjgnUKX4azu3dLTVtie9u6TKqgx29RBwfj3QXYt5EKfWM/9hPSAI/4qcV5NACjwAo8UtTeWefx6Zq5PHcMm7Tg=="
+      data-cf-beacon='{"rayId":"80c227004f932e96","token":"cd0b4b3a733644fc843ef0b185f98241","version":"2023.8.0","si":100}'
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

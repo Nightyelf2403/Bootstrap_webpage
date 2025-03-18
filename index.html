@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Bootstrap Website Template</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700,900"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="fonts/icomoon/style.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/magnific-popup.css" />
+    <link rel="stylesheet" href="css/jquery-ui.css" />
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css" />
+    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css" />
+    <link rel="stylesheet" href="css/aos.css" />
+    <link rel="stylesheet" href="css/fancybox.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script nonce="e9a2b1d8-259f-4405-8d23-7f9e3d553d53">
+      (function (w, d) {
+        !(function (a, b, c, d) {
+          a[c] = a[c] || {};
+          a[c].executed = [];
+          a.zaraz = { deferred: [], listeners: [] };
+          a.zaraz.q = [];
+          a.zaraz._f = function (e) {
+            return async function () {
+              var f = Array.prototype.slice.call(arguments);
+              a.zaraz.q.push({ m: e, a: f });
+            };
+          };
+          for (const g of ["track", "set", "debug"]) a.zaraz[g] = a.zaraz._f(g);
+          a.zaraz.init = () => {
+            var h = b.getElementsByTagName(d)[0],
+              i = b.createElement(d),
+              j = b.getElementsByTagName("title")[0];
+            j && (a[c].t = b.getElementsByTagName("title")[0].text);
+            a[c].x = Math.random();
+            a[c].w = a.screen.width;
+            a[c].h = a.screen.height;
+            a[c].j = a.innerHeight;
+            a[c].e = a.innerWidth;
+            a[c].l = a.location.href;
+            a[c].r = b.referrer;
+            a[c].k = a.screen.colorDepth;
+            a[c].n = b.characterSet;
+            a[c].o = new Date().getTimezoneOffset();
+            if (a.dataLayer)
+              for (const n of Object.entries(
+                Object.entries(dataLayer).reduce(
+                  (o, p) => ({ ...o[1], ...p[1] }),
+                  {}
+                )
+              ))
+                zaraz.set(n[0], n[1], { scope: "page" });
+            a[c].q = [];
+            for (; a.zaraz.q.length; ) {
+              const q = a.zaraz.q.shift();
+              a[c].q.push(q);
+            }
+            i.defer = !0;
+            for (const r of [localStorage, sessionStorage])
+              Object.keys(r || {})
+                .filter((t) => t.startsWith("_zaraz_"))
+                .forEach((s) => {
+                  try {
+                    a[c]["z_" + s.slice(7)] = JSON.parse(r.getItem(s));
+                  } catch {
+                    a[c]["z_" + s.slice(7)] = r.getItem(s);
+                  }
+                });
+            i.referrerPolicy = "origin";
+            i.src =
+              "/cdn-cgi/zaraz/s.js?z=" +
+              btoa(encodeURIComponent(JSON.stringify(a[c])));
+            h.parentNode.insertBefore(i, h);
+          };
+          ["complete", "interactive"].includes(b.readyState)
+            ? zaraz.init()
+            : a.addEventListener("DOMContentLoaded", zaraz.init);
+        })(w, d, "zarazData", "script");
+      })(window, document);
+    </script>
+  </head>
+  <body>
+    <div class="site-wrap">
+      <div class="site-mobile-menu">
+        <div class="site-mobile-menu-header">
+          <div class="site-mobile-menu-close mt-3">
+            <span class="icon-close2 js-menu-toggle"></span>
+          </div>
+        </div>
+        <div class="site-mobile-menu-body"></div>
+      </div>
+      <header
+        class="header-bar d-flex d-lg-block align-items-center"
+        data-aos="fade-left"
+      >
+        <div class="site-logo">
+          <a href="index.html">Shutter</a>
+        </div>
+        <div
+          class="d-inline-block d-xl-none ml-md-0 ml-auto py-3"
+          style="position: relative; top: 3px"
+        >
+          <a href="#" class="site-menu-toggle js-menu-toggle text-white"
+            ><span class="icon-menu h3"></span
+          ></a>
+        </div>
+        <div class="main-menu">
+          <ul class="js-clone-nav">
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="photos.html">Photos</a></li>
+            <li><a href="bio.html">Bio</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+          <ul class="social js-clone-nav">
+            <li>
+              <a href="#"><span class="icon-facebook"></span></a>
+            </li>
+            <li>
+              <a href="#"><span class="icon-twitter"></span></a>
+            </li>
+            <li>
+              <a href="#"><span class="icon-instagram"></span></a>
+            </li>
+          </ul>
+        </div>
+      </header>
+      <main class="main-content">
+        <div class="container-fluid photos">
+          <div class="row align-items-stretch">
+            <div class="col-6 col-md-6 col-lg-8" data-aos="fade-up">
+              <a href="single.html" class="d-block photo-item">
+                <img
+                  src="images/img_4.jpg.webp"
+                  alt="Image"
+                  class="img-fluid"
+                />
+                <div class="photo-text-more">
+                  <div class="photo-text-more">
+                    <h3 class="heading">Ducks</h3>
+                    <span class="meta">20 Photos</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div
+              class="col-6 col-md-6 col-lg-4"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <a href="single.html" class="d-block photo-item">
+                <img
+                  src="images/img_5.jpg.webp"
+                  alt="Image"
+                  class="img-fluid"
+                />
+                <div class="photo-text-more">
+                  <div class="photo-text-more">
+                    <h3 class="heading">Dark</h3>
+                    <span class="meta">200 Photos</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-6 col-md-6 col-lg-3" data-aos="fade-up">
+              <a href="single.html" class="d-block photo-item">
+                <img
+                  src="images/img_1.jpg.webp"
+                  alt="Image"
+                  class="img-fluid"
+                />
+                <div class="photo-text-more">
+                  <h3 class="heading">Sleepy</h3>
+                  <span class="meta">40 Photos</span>
+                </div>
+              </a>
+            </div>
+            <div
+              class="col-6 col-md-6 col-lg-6"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <a href="single.html" class="d-block photo-item">
+                <img
+                  src="images/img_2.jpg.webp"
+                  alt="Image"
+                  class="img-fluid"
+                />
+                <div class="photo-text-more">
+                  <div class="photo-text-more">
+                    <h3 class="heading">Nature</h3>
+                    <span class="meta">32 Photos</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div
+              class="col-6 col-md-6 col-lg-3"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
+              <a href="single.html" class="d-block photo-item">
+                <img
+                  src="images/img_3.jpg.webp"
+                  alt="Image"
+                  class="img-fluid"
+                />
+                <div class="photo-text-more">
+                  <div class="photo-text-more">
+                    <h3 class="heading">Desktop</h3>
+                    <span class="meta">23 Photos</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div
+              class="col-6 col-md-6 col-lg-6"
+              data-aos="fade-up"
+              data-aos-delay
+            >
+              <a href="single.html" class="d-block photo-item">
+                <img
+                  src="images/img_6.jpg.webp"
+                  alt="Image"
+                  class="img-fluid"
+                />
+                <div class="photo-text-more">
+                  <div class="photo-text-more">
+                    <h3 class="heading">China</h3>
+                    <span class="meta">53 Photos</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div
+              class="col-6 col-md-6 col-lg-6"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <a href="single.html" class="d-block photo-item">
+                <img
+                  src="images/img_7.jpg.webp"
+                  alt="Image"
+                  class="img-fluid"
+                />
+                <div class="photo-text-more">
+                  <div class="photo-text-more">
+                    <h3 class="heading">Lovers</h3>
+                    <span class="meta">41 Photos</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div
+              class="col-6 col-md-6 col-lg-4"
+              data-aos="fade-up"
+              data-aos-delay
+            >
+              <a href="single.html" class="d-block photo-item">
+                <img
+                  src="images/img_8.jpg.webp"
+                  alt="Image"
+                  class="img-fluid"
+                />
+                <div class="photo-text-more">
+                  <div class="photo-text-more">
+                    <h3 class="heading">Naruto!</h3>
+                    <span class="meta">40 Photos</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div
+              class="col-6 col-md-6 col-lg-4"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <a href="single.html" class="d-block photo-item">
+                <img
+                  src="images/img_9.jpg.webp"
+                  alt="Image"
+                  class="img-fluid"
+                />
+                <div class="photo-text-more">
+                  <div class="photo-text-more">
+                    <h3 class="heading">NH!</h3>
+                    <span class="meta">18 Photos</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div
+              class="col-6 col-md-6 col-lg-4"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <a href="single.html" class="d-block photo-item">
+                <img
+                  src="images/img_10.jpg.webp"
+                  alt="Image"
+                  class="img-fluid"
+                />
+                <div class="photo-text-more">
+                  <div class="photo-text-more">
+                    <h3 class="heading">Nature</h3>
+                    <span class="meta">2 Photos</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div
+              class="col-6 col-md-6 col-lg-3"
+              data-aos="fade-up"
+              data-aos-delay
+            >
+              <a href="single.html" class="d-block photo-item">
+                <img
+                  src="images/img_1.jpg.webp"
+                  alt="Image"
+                  class="img-fluid"
+                />
+                <div class="photo-text-more">
+                  <div class="photo-text-more">
+                    <h3 class="heading">Sleepy</h3>
+                    <span class="meta">90 Photos</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div
+              class="col-6 col-md-6 col-lg-6"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <a href="single.html" class="d-block photo-item">
+                <img
+                  src="images/img_2.jpg.webp"
+                  alt="Image"
+                  class="img-fluid"
+                />
+                <div class="photo-text-more">
+                  <div class="photo-text-more">
+                    <h3 class="heading">Nature Cat</h3>
+                    <span class="meta">15 Photos</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div
+              class="col-6 col-md-6 col-lg-3"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <a href="single.html" class="d-block photo-item">
+                <img
+                  src="images/img_3.jpg.webp"
+                  alt="Image"
+                  class="img-fluid"
+                />
+                <div class="photo-text-more">
+                  <div class="photo-text-more">
+                    <h3 class="heading">Desk cat</h3>
+                    <span class="meta">200 Photos</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div
+              class="col-6 col-md-6 col-lg-8"
+              data-aos="fade-up"
+              data-aos-delay
+            >
+              <a href="single.html" class="d-block photo-item">
+                <img
+                  src="images/img_4.jpg.webp"
+                  alt="Image"
+                  class="img-fluid"
+                />
+                <div class="photo-text-more">
+                  <div class="photo-text-more">
+                    <h3 class="heading">DUcks</h3>
+                    <span class="meta">19 Photos</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div
+              class="col-6 col-md-6 col-lg-4"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <a href="single.html" class="d-block photo-item">
+                <img
+                  src="images/img_5.jpg.webp"
+                  alt="Image"
+                  class="img-fluid"
+                />
+                <div class="photo-text-more">
+                  <div class="photo-text-more">
+                    <h3 class="heading">Surivivor</h3>
+                    <span class="meta">29 Photos</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div
+              class="col-6 col-md-6 col-lg-6"
+              data-aos="fade-up"
+              data-aos-delay
+            >
+              <a href="single.html" class="d-block photo-item">
+                <img
+                  src="images/img_6.jpg.webp"
+                  alt="Image"
+                  class="img-fluid"
+                />
+                <div class="photo-text-more">
+                  <div class="photo-text-more">
+                    <h3 class="heading">China</h3>
+                    <span class="meta">21 Photos</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div
+              class="col-6 col-md-6 col-lg-6"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <a href="single.html" class="d-block photo-item">
+                <img
+                  src="images/img_7.jpg.webp"
+                  alt="Image"
+                  class="img-fluid"
+                />
+                <div class="photo-text-more">
+                  <div class="photo-text-more">
+                    <h3 class="heading">Lovers</h3>
+                    <span class="meta">12 Photos</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div
+              class="col-6 col-md-6 col-lg-4"
+              data-aos="fade-up"
+              data-aos-delay
+            >
+              <a href="single.html" class="d-block photo-item">
+                <img
+                  src="images/img_8.jpg.webp"
+                  alt="Image"
+                  class="img-fluid"
+                />
+                <div class="photo-text-more">
+                  <div class="photo-text-more">
+                    <h3 class="heading">Naruto.</h3>
+                    <span class="meta">4 Photos</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div
+              class="col-6 col-md-6 col-lg-8"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <a href="single.html" class="d-block photo-item">
+                <img
+                  src="images/img_9.jpg.webp"
+                  alt="Image"
+                  class="img-fluid"
+                />
+                <div class="photo-text-more">
+                  <div class="photo-text-more">
+                    <h3 class="heading">NH!</h3>
+                    <span class="meta">10 Photos</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-md-12 text-center py-5">
+              <p>
+                Copyright &copy;
+                <script>
+                  document.write(new Date().getFullYear());
+                </script>
+                All rights reserved | This template is made with
+                by<font color="Red"
+                <b>Lalith Aditya</b></font>
+              </p>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery-migrate-3.0.1.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/jquery.countdown.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/bootstrap-datepicker.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-23581568-13");
+    </script>
+    <script
+      defer
+      src="https://static.cloudflareinsights.com/beacon.min.js/v8b253dfea2ab4077af8c6f58422dfbfd1689876627854"
+      integrity="sha512-bjgnUKX4azu3dLTVtie9u6TKqgx29RBwfj3QXYt5EKfWM/9hPSAI/4qcV5NACjwAo8UtTeWefx6Zq5PHcMm7Tg=="
+      data-cf-beacon='{"rayId":"80c234ca9ce347bd","token":"cd0b4b3a733644fc843ef0b185f98241","version":"2023.8.0","si":100}'
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
